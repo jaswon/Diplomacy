@@ -2,9 +2,8 @@
 
 To Run:
 
-In the `Diplomacy/` directory, open Terminal, run the command:
+Open Terminal, run the following commands:
 
-	sudo npm install
-	node server.js
-	
-Access the page at `http://localhost:3000`
+	node server/server.js
+	cd ngClient
+	gulp

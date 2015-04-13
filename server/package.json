@@ -1,0 +1,20 @@
+{
+  "name": "Diplomacy",
+  "version": "1.0.0",
+  "description": "A game of mind games",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Won, Tony Zhu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "1.1.5",
+    "mongoose": "3.8.1",
+    "body-parser": "~1.0.1",
+    "request": "2.55.0",
+    "cheerio": "0.19.0",
+    "jsonwebtoken": "5.0.0"
+  }
+}

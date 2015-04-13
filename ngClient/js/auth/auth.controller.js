@@ -49,7 +49,6 @@ myApp.controller('LoginCtrl', ['$scope', '$window', '$location', 'UserAuthFactor
                     alert(data.data);
                 }
             }).error(function(status) {
-                console.log(status);
                 alert('Oops something went wrong! ');
             });
         }

@@ -110,7 +110,6 @@ app.post('/reg', function(req,res) { //sign up
                                 password: req.body.password,
                                 faction: req.body.faction
                             }).save(function(err,user) {
-                                console.log(err)
                                 user.token = jwt.sign(user, app.get('jwt_secret'));
                                 user.save(function(err,user1) {
                                     res.json({

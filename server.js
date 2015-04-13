@@ -10,10 +10,9 @@ var User = require("./usermodel");
 
 var app = express();
 
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 app.use(function(req,res,next) {
     res.header('Access-Control-Allow-Origin','*');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
@@ -175,8 +174,8 @@ app.get('/faction', tokenAuth, function(req,res) {
     });
 })
 
-app.use(function (req,res) {
-    res.render('404',{url: req.url});
+app.get('/', function(req, res) {
+		res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(3000);

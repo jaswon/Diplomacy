@@ -1,5 +1,7 @@
 var myApp = angular.module('ngclient', ['ngRoute']);
 
+console.log("something");
+
 myApp.config(function($routeProvider, $httpProvider) {
 
     $httpProvider.interceptors.push('TokenInterceptor');

@@ -17,13 +17,13 @@ myApp.factory('AuthenticationFactory', function($window) {
 myApp.factory('UserAuthFactory', function($window, $location, $http, AuthenticationFactory) {
     return {
         login: function(username, password) {
-            return $http.post('http://localhost:3000/auth', {
+            return $http.post('/auth', {
                 username: username,
                 password: password
             });
         },
         register: function(username, password, faction) {
-            return $http.post('http://localhost:3000/reg', {
+            return $http.post('/reg', {
                 username: username,
                 password: password,
                 faction: faction

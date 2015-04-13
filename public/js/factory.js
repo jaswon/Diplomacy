@@ -1,14 +1,13 @@
 myApp.factory('dataFactory', function($http) {
   /** https://docs.angularjs.org/guide/providers **/
-  var urlBase = 'http://localhost:3000';
   var _prodFactory = {};
 
   _prodFactory.getFactionInfo = function() {
-    return $http.get(urlBase+"/faction");
+    return $http.get("/faction");
   };
 
   _prodFactory.getUserInfo = function() {
-      return $http.get(urlBase+"/me");
+      return $http.get("/me");
   }
 
   return _prodFactory;

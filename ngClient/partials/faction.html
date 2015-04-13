@@ -1,0 +1,21 @@
+<div class="container" ng-controller="FactionCtrl">
+  <div class="page-header">
+    <h3>Faction Info
+    </h3>
+  </div>
+
+
+  <p class="lead">
+    <table class="table table-striped">
+      <tr>
+        <th>Username</th>
+        <th>Faction</th>
+      </tr>
+      <tr ng-repeat="uinfo in factioninfo">
+        <td>{{uinfo.username}}</td>
+        <td>{{uinfo.faction}}</td>
+      </tr>
+    </table>
+  </p>
+
+</div>

@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'uninstall', 'jade', '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node_modules/jade unbuild
+5 info preuninstall jade@1.1.5
+6 info uninstall jade@1.1.5
+7 verbose true,/Users/jaswon/Code/Diplomacy/server/node_modules,/Users/jaswon/Code/Diplomacy/server/node_modules unbuild jade@1.1.5
+8 verbose /Users/jaswon/Code/Diplomacy/server/node_modules/.bin,[object Object] binRoot
+9 error Error: EACCES, unlink '/Users/jaswon/Code/Diplomacy/server/node_modules/.bin/jade'
+9 error  { [Error: EACCES, unlink '/Users/jaswon/Code/Diplomacy/server/node_modules/.bin/jade']
+9 error   errno: 3,
+9 error   code: 'EACCES',
+9 error   path: '/Users/jaswon/Code/Diplomacy/server/node_modules/.bin/jade' }
+10 error Please try running this command again as root/Administrator.
+11 error System Darwin 14.0.0
+12 error command "node" "/usr/local/bin/npm" "uninstall" "jade" "--save"
+13 error cwd /Users/jaswon/Code/Diplomacy/server
+14 error node -v v0.10.32
+15 error npm -v 1.4.28
+16 error path /Users/jaswon/Code/Diplomacy/server/node_modules/.bin/jade
+17 error code EACCES
+18 error errno 3
+19 error stack Error: EACCES, unlink '/Users/jaswon/Code/Diplomacy/server/node_modules/.bin/jade'
+20 verbose exit [ 3, true ]
